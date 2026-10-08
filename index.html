@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innovate Web Summit 2026 · Nov 27 · Lucknow</title>
+<meta name="description" content="Innovate Web Summit 2026 — one day for developers, founders and students. Nov 27, 2026, Lucknow.">
+<meta property="og:title" content="Innovate Web Summit 2026">
+<meta property="og:description" content="Empowering Builders. Connecting Innovators. Nov 27, 2026 · Lucknow.">
+<meta property="og:image" content="https://innovateweb.org/images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ec3013'/%3E%3Ctext x='5' y='24' font-family='Arial' font-weight='800' font-size='20' fill='%23f3f2f2'%3EIW%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/modernist.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#/" class="brand">Innovate Web <span>Summit 2026</span></a>
+    <nav class="nav-links" id="nav"></nav>
+    <button class="btn-p sm" data-tickets>Get tickets <i class="arr"></i></button>
+  </div>
+</header>
+
+<main id="view-home" data-view="home">
+  <section class="wrap hero">
+    <div>
+      <div class="kick">Innovate Web's flagship conference</div>
+      <h1>Innovate Web Summit 2026</h1>
+      <p class="lede">Empowering Builders. Connecting Innovators. One day for developers, founders and students across the community.</p>
+      <div class="row">
+        <button class="btn-p lg" data-tickets>Get tickets <i class="arr"></i></button>
+        <a class="btn-o lg" href="#/agenda">View agenda</a>
+      </div>
+    </div>
+    <figure class="hero-img"><img src="https://innovateweb.org/images/hero.jpg" alt="Innovate Web event" class="bw"></figure>
+  </section>
+
+  <section class="wrap pt48">
+    <div class="count">
+      <div class="count-lead">
+        <div class="eyebrow">Doors open in</div>
+        <div>Nov 27, 2026<br>Lucknow · venue announced soon</div>
+      </div>
+      <div id="countdown" class="count-cells"></div>
+    </div>
+  </section>
+
+  <section id="about" class="wrap sec">
+    <div class="sec-head"><div class="kick">01 — Why attend</div><h2>Everything you need to thrive in the ecosystem, in one room.</h2></div>
+    <div class="why" id="why"></div>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section id="tracks" class="wrap sec">
+    <div class="sec-head"><div class="kick">02 — Tracks</div><h2>Four tracks, three halls, one day.</h2></div>
+    <div class="cells" id="trackCards"></div>
+  </section>
+
+  <section id="speakers" class="wrap sec">
+    <div class="sec-row"><div><div class="kick mb16">03 — Speakers</div><h2>Builders on stage</h2></div>
+      <a class="btn-o" href="#/speakers">All 12 speakers <i class="arr"></i></a></div>
+    <div class="sp-grid ruled" id="featured"></div>
+  </section>
+
+  <section id="agenda" class="wrap sec">
+    <div class="sec-row"><div><div class="kick mb16">04 — Agenda</div><h2>Morning on Nov 27</h2></div>
+      <a class="btn-o" href="#/agenda">Full agenda <i class="arr"></i></a></div>
+    <div class="preview" id="preview"></div>
+  </section>
+
+  <section class="wrap sec">
+    <div class="kick mb24">From past Innovate Web events · 350+ and counting</div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section id="tickets" class="wrap sec">
+    <div class="sec-head"><div class="kick">05 — Tickets</div><h2>Pick your pass</h2></div>
+    <div class="cells" id="tiers"></div>
+  </section>
+
+  <section id="sponsors" class="wrap sec">
+    <div class="sec-row"><div><div class="kick mb16">06 — Sponsors</div><h2>Backed by the ecosystem</h2></div>
+      <a class="btn-o" href="mailto:hello@innovateweb.org?subject=Summit%20sponsorship">Become a sponsor <i class="arr"></i></a></div>
+    <div class="sp-tier"><div class="eyebrow">Headline</div><div class="logos big"><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div></div></div>
+    <div class="sp-tier"><div class="eyebrow">Partners</div><div class="logos"><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div><div class="ph">sponsor logo</div></div></div>
+  </section>
+
+  <section id="cfp" class="cfp">
+    <div class="wrap cfp-in">
+      <div class="cfp-copy">
+        <div class="eyebrow">07 — Call for speakers</div>
+        <h2>Take the stage.</h2>
+        <p>Talks, panels and workshops from builders who ship. First-time speakers are welcome and get a mentor from the community.</p>
+        <dl><dt>Closes</dt><dd>Oct 31, 2026</dd><dt>Formats</dt><dd>20-min talk, panel, 60-min workshop</dd></dl>
+      </div>
+      <form id="cfpForm" class="panel">
+        <div class="two">
+          <label class="fld">Name<input name="name" required></label>
+          <label class="fld">Email<input name="email" type="email" required></label>
+        </div>
+        <label class="fld">Talk title<input name="title" required></label>
+        <div class="two">
+          <label class="fld">Track<select name="track"><option>AI &amp; the Web</option><option>Web Engineering</option><option>Product &amp; Growth</option><option>Founders &amp; Startups</option></select></label>
+          <label class="fld">Format<select name="format"><option>Talk</option><option>Panel</option><option>Workshop</option></select></label>
+        </div>
+        <label class="fld">Abstract<textarea name="abstract" rows="4" required></textarea></label>
+        <button type="submit" class="btn-d">Submit proposal <i class="arr"></i></button>
+      </form>
+      <div id="cfpDone" class="panel" hidden>
+        <div class="kick">Almost there</div>
+        <h3>Online submissions open soon.</h3>
+        <p>We're not collecting proposals on this page yet. Send yours by email and the programme team will reply by Nov 7, 2026.</p>
+        <a id="cfpMail" class="btn-d" href="mailto:hello@innovateweb.org">Email your proposal <i class="arr"></i></a>
+        <button type="button" class="link" id="cfpReset">Edit proposal</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main id="view-agenda" data-view="agenda" class="wrap page" hidden>
+  <div class="kick mb20">Agenda · Friday, Nov 27, 2026</div>
+  <h1 class="page-h">Agenda</h1>
+  <div class="filters sticky">
+    <div class="frow"><span class="eyebrow w64">Track</span><div class="chips" id="trackChips"></div></div>
+    <div class="frow"><span class="eyebrow w64">Format</span><div class="chips" id="formatChips"></div><span class="muted ml-auto" id="sessCount"></span></div>
+  </div>
+  <div id="sessions"></div>
+</main>
+
+<main id="view-speakers" data-view="speakers" class="wrap page" hidden>
+  <div class="kick mb20">12 speakers · 4 tracks</div>
+  <h1 class="page-h">Speakers</h1>
+  <div class="filters"><div class="frow"><span class="eyebrow">Track</span><div class="chips" id="spChips"></div></div></div>
+  <div class="cells sp-cells" id="allSpeakers"></div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <div><div class="ftr-brand">Innovate Web Summit 2026</div><div class="muted">Nov 27, 2026 · Lucknow</div></div>
+    <div class="col"><a href="#/agenda">Agenda</a><a href="#/speakers">Speakers</a><a href="#" data-tickets>Tickets</a></div>
+    <div class="col"><a href="https://innovateweb.org">innovateweb.org</a><a href="https://chat.whatsapp.com/IerKyZQLwNoFcWgaGOjO5N">Join the community</a><a href="https://www.instagram.com/innovatewebsocial/">Instagram</a></div>
+    <div class="muted">© 2026 Innovate Web — a minimal community for builders, creators, and founders.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="spModal" hidden>
+  <div class="modal sp-modal" role="dialog" aria-modal="true" aria-labelledby="spName">
+    <div class="ph tall">speaker photo · b/w</div>
+    <div class="sp-body">
+      <div class="sp-top"><div class="tag-k" id="spTrack"></div><button class="x" data-close aria-label="Close"></button></div>
+      <h2 id="spName"></h2>
+      <div class="muted" id="spRole"></div>
+      <p id="spBio" class="bio"></p>
+      <div class="eyebrow mt8">At the Summit</div>
+      <div id="spSess" class="ruled-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay" id="tModal" hidden>
+  <div class="modal t-modal" role="dialog" aria-modal="true" aria-labelledby="tTitle">
+    <div class="sp-top"><div class="bars" id="tBars"></div><button class="x" data-close aria-label="Close"></button></div>
+    <div><div class="kick mb8" id="tLabel"></div><h2 id="tTitle" class="t-title"></h2></div>
+    <div id="tStep1">
+      <div class="ruled-2" id="tierRows"></div>
+      <div class="qty-row"><span>Quantity</span><div class="qty"><button id="qDec" aria-label="Fewer">−</button><output id="qVal">1</output><button id="qInc" aria-label="More">+</button></div></div>
+    </div>
+    <div id="tStep2" class="stack" hidden>
+      <label class="fld">Full name<input id="fName" autocomplete="name"></label>
+      <label class="fld">Email<input id="fEmail" type="email" autocomplete="email"></label>
+      <label class="fld">I am a<select id="fRole"><option>Developer</option><option>Founder</option><option>Student</option><option>Designer</option><option>Other</option></select></label>
+      <div class="muted" id="tErr" role="alert"></div>
+    </div>
+    <div id="tStep3" hidden>
+      <p class="t-note">Ticket sales open soon. <strong>Payments aren't live yet</strong> and no order has been placed. Join the community to hear first when passes go on sale.</p>
+      <a class="link" href="https://chat.whatsapp.com/IerKyZQLwNoFcWgaGOjO5N">Join the community on WhatsApp →</a>
+    </div>
+    <div class="t-sum"><span id="tSummary"></span><span class="t-total" id="tTotal"></span><span class="muted sm">Innovate Web Summit · Nov 27, 2026</span></div>
+    <div class="row8"><button class="btn-o" id="tBack" hidden>Back</button><button class="btn-p grow" id="tNext"></button></div>
+  </div>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
