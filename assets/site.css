@@ -40,7 +40,8 @@ h1,h2,h3{font-weight:800}
 /* header */
 .hdr{position:sticky;top:0;z-index:20;background:var(--color-bg);border-bottom:2px solid var(--color-divider)}
 .hdr-in{padding-top:14px;padding-bottom:14px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.brand{margin-right:auto;font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--color-text);text-decoration:none}
+.brand{margin-right:auto;display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.02em;color:var(--color-text);text-decoration:none}
+.brand img{height:40px;width:auto;display:block}
 .brand span{color:var(--color-accent)}.brand:hover{color:var(--color-text)}
 .nav-links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
 .nav-links a{color:var(--color-text);text-decoration:none}.nav-links a:hover,.nav-links a.on{color:var(--color-accent)}
