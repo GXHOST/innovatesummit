@@ -40,8 +40,8 @@ const SESSIONS = [
 ].map(([time,title,format,room,t,people,desc]) => ({ time, title, format, room, track: t===G ? G : TRACKS[t].name, people, desc }));
 const TIERS = [
   { id:'student', name:'Student', price:499, note:'ID required', summary:'All talks and panels, lunch', features:['All talks and panels','Lunch and coffee','Student ID required at entry'] },
-  { id:'pro', name:'Professional', price:1499, note:'Most picked', summary:'Talks, panels, workshops, attendee matching', features:['All talks, panels and workshops','Lunch and coffee','Curated attendee matching before the event'] },
-  { id:'founder', name:'Founder', price:3999, note:'Limited', summary:'Everything, plus founder dinner', features:['Everything in Professional','Founder dinner and private networking','Reserved seating in the Main Hall'] },
+  { id:'pro', name:'Professional', price:999, note:'Most picked', summary:'Talks, panels, workshops, attendee matching', features:['All talks, panels and workshops','Lunch and coffee','Curated attendee matching before the event'] },
+  { id:'founder', name:'Founder', price:1499, note:'Limited', summary:'Everything, plus founder dinner', features:['Everything in Professional','Founder dinner and private networking','Reserved seating in the Main Hall'] },
 ];
 const TARGET = Date.parse('2026-11-27T09:00:00+05:30');
 
